@@ -46,7 +46,7 @@ final class FeedViewController: UIViewController {
                  self.view.addSubview(loader)
              case .failure:
                  self.loader.removeFromSuperview()
-                presentErrorAlert()
+                present(viewModel.getErrorAlert(), animated: true)
              case .success:
                  self.loader.removeFromSuperview()
                 tableView.reloadData()
@@ -58,15 +58,6 @@ final class FeedViewController: UIViewController {
     
     private func fetchTimeline() {
         viewModel.fetchTimeline()
-    }
-    
-    private func presentErrorAlert() {
-        let alert = UIAlertController(title: "Error", message: ":(" , preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .cancel)
-        
-        alert.addAction(okAction)
-        
-        present(alert, animated: true)
     }
     
     private func setupTableView() {
