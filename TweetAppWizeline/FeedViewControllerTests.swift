@@ -95,4 +95,6 @@ final class FeedViewControllerTests: XCTestCase {
         let loader = sut.view.subviews.last
         XCTAssertFalse(loader is UIActivityIndicatorView)
     }
+    
+    
 }

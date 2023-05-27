@@ -14,7 +14,7 @@ protocol Observable {
     var subscriber: Subscriber? { get }
     
     func updateValue(with newValue: ObservedObject?)
-    func bind(_ subscriber: @escaping Subscriber)
+    func bind(_ subscriber: Subscriber?)
 }
 
 class Observer<T>: Observable {
@@ -35,7 +35,7 @@ class Observer<T>: Observable {
         self.value = newValue
     }
     
-    func bind(_ subscriber: @escaping Subscriber) {
+    func bind(_ subscriber: Subscriber?) {
         self.subscriber = subscriber
     }
 }

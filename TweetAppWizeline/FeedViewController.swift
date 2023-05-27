@@ -39,7 +39,7 @@ final class FeedViewController: UIViewController {
         }
     
     private func binding() {
-         viewModel.observer.bind { [unowned self] state in
+         viewModel.bind = { [unowned self] state in
              switch state {
              case .loading:
                  self.view.addSubview(loader)
