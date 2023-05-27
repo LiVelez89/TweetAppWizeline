@@ -96,5 +96,14 @@ final class FeedViewControllerTests: XCTestCase {
         XCTAssertFalse(loader is UIActivityIndicatorView)
     }
     
-    
+    func test_fetchTimeline_showAlertForFailedFetch() {
+        let sut = FeedViewController()
+        
+        sut.loadViewIfNeeded()
+        
+        let navigation = UIApplication.shared.keyWindow?.rootViewController as! UINavigationController
+        let alert = navigation.viewControllers.first?.presentedViewController
+        
+        XCTAssertTrue(alert is UIAlertController, "Expected UIAlertController, got \(alert) insted.")
+    }
 }
