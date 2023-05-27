@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3E20EE122A229A2000E7ACEA /* FeedViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E20EE112A229A2000E7ACEA /* FeedViewModelTests.swift */; };
+		3E20EE172A22AFCE00E7ACEA /* FeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E20EE162A22AFCE00E7ACEA /* FeedDataManager.swift */; };
 		3E3F201A2A1D18DA003F7EF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3F20192A1D18DA003F7EF3 /* AppDelegate.swift */; };
 		3E3F201C2A1D18DA003F7EF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3F201B2A1D18DA003F7EF3 /* SceneDelegate.swift */; };
 		3E3F201E2A1D18DA003F7EF3 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3F201D2A1D18DA003F7EF3 /* FeedViewController.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		3E20EE112A229A2000E7ACEA /* FeedViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModelTests.swift; sourceTree = "<group>"; };
+		3E20EE162A22AFCE00E7ACEA /* FeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataManager.swift; sourceTree = "<group>"; };
 		3E3F20162A1D18DA003F7EF3 /* TweetAppWizeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetAppWizeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E3F20192A1D18DA003F7EF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E3F201B2A1D18DA003F7EF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				3E3F20222A1D18DE003F7EF3 /* Assets.xcassets */,
 				3E3F20242A1D18DE003F7EF3 /* LaunchScreen.storyboard */,
 				3E3F20272A1D18DE003F7EF3 /* Info.plist */,
+				3E20EE162A22AFCE00E7ACEA /* FeedDataManager.swift */,
 			);
 			path = TweetAppWizeline;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E3F201E2A1D18DA003F7EF3 /* FeedViewController.swift in Sources */,
+				3E20EE172A22AFCE00E7ACEA /* FeedDataManager.swift in Sources */,
 				3E58E71B2A1E634C00ABA8B1 /* Observer.swift in Sources */,
 				3E3F201A2A1D18DA003F7EF3 /* AppDelegate.swift in Sources */,
 				3E58E7162A1E5FA800ABA8B1 /* TweetCell.swift in Sources */,
