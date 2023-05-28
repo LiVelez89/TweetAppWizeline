@@ -40,21 +40,27 @@ final class FeedViewController: UIViewController {
         }
     
     private func binding() {
-         viewModel.bind = { [unowned self] state in
-             switch state {
-             case .loading:
-                 self.view.addSubview(loader)
-             case .failure:
-                 self.loader.removeFromSuperview()
-                present(viewModel.getErrorAlert(), animated: true)
-             case .success:
-                 self.loader.removeFromSuperview()
-                tableView.reloadData()
-             default:
-                 break
-             }
-         }
-     }
+        viewModel.bind = { [unowned self] state in
+            switch state {
+            case .loading:
+                DispatchQueue.main.async {
+                    self.view.addSubview(loader)
+                }
+            case .failure:
+                DispatchQueue.main.async {
+                    self.loader.removeFromSuperview()
+                    present(viewModel.getErrorAlert(), animated: true)
+                }
+            case .success:
+                DispatchQueue.main.async {
+                    self.loader.removeFromSuperview()
+                    tableView.reloadData()
+                }
+            default:
+                break
+            }
+        }
+    }
     
     private func fetchTimeline() {
         viewModel.fetchTimeline()

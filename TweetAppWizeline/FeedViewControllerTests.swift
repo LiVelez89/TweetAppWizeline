@@ -109,7 +109,7 @@ final class FeedViewControllerTests: XCTestCase {
         let navigation = UIApplication.shared.keyWindow?.rootViewController as! UINavigationController
         let alert = navigation.viewControllers.first?.presentedViewController
         
-        XCTAssertTrue(alert is UIAlertController, "Expected UIAlertController, got \(alert) insted.")
+        XCTAssertTrue(alert is UIAlertController, "Expected UIAlertController, got \(String(describing: alert)) insted.")
     }
     
     func test_fetchTimeline_reloadDataOnSuccessfulFetch() {

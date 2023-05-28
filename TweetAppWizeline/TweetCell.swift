@@ -136,3 +136,4 @@ struct TweetCellViewModel {
         return UIImage(named: profilePictureName)
     }
 }
+
