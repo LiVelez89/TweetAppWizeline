@@ -10,7 +10,7 @@
 		3E20EE122A229A2000E7ACEA /* FeedViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E20EE112A229A2000E7ACEA /* FeedViewModelTests.swift */; };
 		3E20EE172A22AFCE00E7ACEA /* FeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E20EE162A22AFCE00E7ACEA /* FeedDataManager.swift */; };
 		3E20EE372A23F3F900E7ACEA /* TweetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E20EE362A23F3F900E7ACEA /* TweetModel.swift */; };
-		3E20EE3C2A2408A100E7ACEA /* FeedDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E20EE3B2A2408A100E7ACEA /* FeedDataManagerTests.swift */; };
+		3E20EE412A24F7B500E7ACEA /* FeedDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E20EE402A24F7B500E7ACEA /* FeedDataManagerTests.swift */; };
 		3E3F201A2A1D18DA003F7EF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3F20192A1D18DA003F7EF3 /* AppDelegate.swift */; };
 		3E3F201C2A1D18DA003F7EF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3F201B2A1D18DA003F7EF3 /* SceneDelegate.swift */; };
 		3E3F201E2A1D18DA003F7EF3 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3F201D2A1D18DA003F7EF3 /* FeedViewController.swift */; };
@@ -31,20 +31,13 @@
 			remoteGlobalIDString = 3E3F20152A1D18DA003F7EF3;
 			remoteInfo = TweetAppWizeline;
 		};
-		3E3F20382A1D18E0003F7EF3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3E3F200E2A1D18DA003F7EF3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3E3F20152A1D18DA003F7EF3;
-			remoteInfo = TweetAppWizeline;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3E20EE112A229A2000E7ACEA /* FeedViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModelTests.swift; sourceTree = "<group>"; };
 		3E20EE162A22AFCE00E7ACEA /* FeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataManager.swift; sourceTree = "<group>"; };
 		3E20EE362A23F3F900E7ACEA /* TweetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetModel.swift; sourceTree = "<group>"; };
-		3E20EE3B2A2408A100E7ACEA /* FeedDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataManagerTests.swift; sourceTree = "<group>"; };
+		3E20EE402A24F7B500E7ACEA /* FeedDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataManagerTests.swift; sourceTree = "<group>"; };
 		3E3F20162A1D18DA003F7EF3 /* TweetAppWizeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetAppWizeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E3F20192A1D18DA003F7EF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E3F201B2A1D18DA003F7EF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +48,6 @@
 		3E3F20272A1D18DE003F7EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E3F202C2A1D18DF003F7EF3 /* TweetAppWizelineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TweetAppWizelineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E3F20322A1D18DF003F7EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E3F20372A1D18E0003F7EF3 /* TweetAppWizelineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TweetAppWizelineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E58E7082A1E5D9A00ABA8B1 /* FeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerTests.swift; sourceTree = "<group>"; };
 		3E58E70D2A1E5F3900ABA8B1 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		3E58E7152A1E5FA800ABA8B1 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
@@ -71,13 +63,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3E3F20292A1D18DF003F7EF3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3E3F20342A1D18E0003F7EF3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -101,7 +86,6 @@
 			children = (
 				3E3F20162A1D18DA003F7EF3 /* TweetAppWizeline.app */,
 				3E3F202C2A1D18DF003F7EF3 /* TweetAppWizelineTests.xctest */,
-				3E3F20372A1D18E0003F7EF3 /* TweetAppWizelineUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,7 +97,6 @@
 				3E3F201B2A1D18DA003F7EF3 /* SceneDelegate.swift */,
 				3E3F201D2A1D18DA003F7EF3 /* FeedViewController.swift */,
 				3E58E7082A1E5D9A00ABA8B1 /* FeedViewControllerTests.swift */,
-				3E20EE3B2A2408A100E7ACEA /* FeedDataManagerTests.swift */,
 				3E58E7152A1E5FA800ABA8B1 /* TweetCell.swift */,
 				3E58E70D2A1E5F3900ABA8B1 /* FeedViewModel.swift */,
 				3E58E71A2A1E634C00ABA8B1 /* Observer.swift */,
@@ -132,6 +115,7 @@
 			children = (
 				3E3F20322A1D18DF003F7EF3 /* Info.plist */,
 				3E20EE112A229A2000E7ACEA /* FeedViewModelTests.swift */,
+				3E20EE402A24F7B500E7ACEA /* FeedDataManagerTests.swift */,
 			);
 			path = TweetAppWizelineTests;
 			sourceTree = "<group>";
@@ -174,24 +158,6 @@
 			productReference = 3E3F202C2A1D18DF003F7EF3 /* TweetAppWizelineTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3E3F20362A1D18E0003F7EF3 /* TweetAppWizelineUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3E3F20462A1D18E0003F7EF3 /* Build configuration list for PBXNativeTarget "TweetAppWizelineUITests" */;
-			buildPhases = (
-				3E3F20332A1D18E0003F7EF3 /* Sources */,
-				3E3F20342A1D18E0003F7EF3 /* Frameworks */,
-				3E3F20352A1D18E0003F7EF3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3E3F20392A1D18E0003F7EF3 /* PBXTargetDependency */,
-			);
-			name = TweetAppWizelineUITests;
-			productName = TweetAppWizelineUITests;
-			productReference = 3E3F20372A1D18E0003F7EF3 /* TweetAppWizelineUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,10 +171,6 @@
 						CreatedOnToolsVersion = 12.2;
 					};
 					3E3F202B2A1D18DF003F7EF3 = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = 3E3F20152A1D18DA003F7EF3;
-					};
-					3E3F20362A1D18E0003F7EF3 = {
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = 3E3F20152A1D18DA003F7EF3;
 					};
@@ -229,7 +191,6 @@
 			targets = (
 				3E3F20152A1D18DA003F7EF3 /* TweetAppWizeline */,
 				3E3F202B2A1D18DF003F7EF3 /* TweetAppWizelineTests */,
-				3E3F20362A1D18E0003F7EF3 /* TweetAppWizelineUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -246,13 +207,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3E3F202A2A1D18DF003F7EF3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3E3F20352A1D18E0003F7EF3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -281,16 +235,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E20EE3C2A2408A100E7ACEA /* FeedDataManagerTests.swift in Sources */,
+				3E20EE412A24F7B500E7ACEA /* FeedDataManagerTests.swift in Sources */,
 				3E58E7092A1E5D9A00ABA8B1 /* FeedViewControllerTests.swift in Sources */,
 				3E20EE122A229A2000E7ACEA /* FeedViewModelTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3E3F20332A1D18E0003F7EF3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,11 +248,6 @@
 			isa = PBXTargetDependency;
 			target = 3E3F20152A1D18DA003F7EF3 /* TweetAppWizeline */;
 			targetProxy = 3E3F202D2A1D18DF003F7EF3 /* PBXContainerItemProxy */;
-		};
-		3E3F20392A1D18E0003F7EF3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3E3F20152A1D18DA003F7EF3 /* TweetAppWizeline */;
-			targetProxy = 3E3F20382A1D18E0003F7EF3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -527,46 +469,6 @@
 			};
 			name = Release;
 		};
-		3E3F20472A1D18E0003F7EF3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XSFZN5CYD6;
-				INFOPLIST_FILE = TweetAppWizelineUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lina.TweetAppWizelineUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TweetAppWizeline;
-			};
-			name = Debug;
-		};
-		3E3F20482A1D18E0003F7EF3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XSFZN5CYD6;
-				INFOPLIST_FILE = TweetAppWizelineUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lina.TweetAppWizelineUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TweetAppWizeline;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -593,15 +495,6 @@
 			buildConfigurations = (
 				3E3F20442A1D18E0003F7EF3 /* Debug */,
 				3E3F20452A1D18E0003F7EF3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3E3F20462A1D18E0003F7EF3 /* Build configuration list for PBXNativeTarget "TweetAppWizelineUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3E3F20472A1D18E0003F7EF3 /* Debug */,
-				3E3F20482A1D18E0003F7EF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

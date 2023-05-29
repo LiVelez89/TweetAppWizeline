@@ -9,18 +9,19 @@ import Foundation
 
 protocol FeedDataManagerProtocol {
     func fetch(completion: @escaping (Result<[TweetCellViewModel], Error>) -> Void)
-    
 }
 
 class FeedDataManager: FeedDataManagerProtocol {
     
+    var session = URLSession(configuration: .default)
+    
     func fetch(completion: @escaping (Result<[TweetCellViewModel], Error>) -> Void) {
-        guard let url = URL(string: "https://gist.githubusercontent.com/ferdelarosa-wz/0c73ab5311c845fb7dfac4b62ab6c652/raw/6a39cffe68d87f1613f222372c62bd4e89ad06fa/tweets.json" ) else {
-            completion(.failure(NSError(domain: "Bad url", code: 1)))
-            return
-        }
+//        guard let url = URL(string: "https://gist.githubusercontent.com/ferdelarosa-wz/0c73ab5311c845fb7dfac4b62ab6c652/raw/6a39cffe68d87f1613f222372c62bd4e89ad06fa/tweets.json" ) else {
+//            completion(.failure(NSError(domain: "Bad url", code: 1)))
+//            return
+//        }
+        let url = URL(string: "https://gist.githubusercontent.com/ferdelarosa-wz/0c73ab5311c845fb7dfac4b62ab6c652/raw/6a39cffe68d87f1613f222372c62bd4e89ad06fa/tweets.json")!
         
-        let session = URLSession(configuration: .default)
         let task = session.dataTask(with: url) { data, _, error in
             guard let data = data else {
                 if let error = error {
@@ -36,6 +37,7 @@ class FeedDataManager: FeedDataManagerProtocol {
     }
     private func decodeData(from data: Data, with completion: @escaping (Result<[TweetCellViewModel], Error>) -> Void) {
         do {
+            
             let decoder = JSONDecoder()
             let result = try decoder.decode(TweetModel.self, from: data)
             let tweets = result.tweets
