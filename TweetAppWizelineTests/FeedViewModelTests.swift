@@ -22,7 +22,7 @@ class FeedViewModelTests: XCTestCase {
         }
         //When
         sut.observer.updateValue(with: .loading)
-        XCTAssertNil(sut.bind) //I had observer here but the test didn't pass, It did when change to bind
+        XCTAssertNil(sut.bind) 
         
         wait(for: [exp], timeout: 1.0)
     }

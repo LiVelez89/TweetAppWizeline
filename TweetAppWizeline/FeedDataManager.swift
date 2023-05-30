@@ -16,10 +16,6 @@ class FeedDataManager: FeedDataManagerProtocol {
     var session = URLSession(configuration: .default)
     
     func fetch(completion: @escaping (Result<[TweetCellViewModel], Error>) -> Void) {
-//        guard let url = URL(string: "https://gist.githubusercontent.com/ferdelarosa-wz/0c73ab5311c845fb7dfac4b62ab6c652/raw/6a39cffe68d87f1613f222372c62bd4e89ad06fa/tweets.json" ) else {
-//            completion(.failure(NSError(domain: "Bad url", code: 1)))
-//            return
-//        }
         let url = URL(string: "https://gist.githubusercontent.com/ferdelarosa-wz/0c73ab5311c845fb7dfac4b62ab6c652/raw/6a39cffe68d87f1613f222372c62bd4e89ad06fa/tweets.json")!
         
         let task = session.dataTask(with: url) { data, _, error in
@@ -40,13 +36,10 @@ class FeedDataManager: FeedDataManagerProtocol {
             
             let decoder = JSONDecoder()
             let result = try decoder.decode(TweetModel.self, from: data)
-            let tweets = result.tweets
-            
-            var tweetCellArray: [TweetCellViewModel] = []
-            
-            for i in 0..<tweets.count {
-                tweetCellArray.append(TweetCellViewModel(userName: tweets[i].user.name, profileName: tweets[i].user.screenName, profilePictureName: tweets[i].user.profileImageUrl, content: tweets[i].text))
-            }
+            let tweetCellArray = result.tweets.map { TweetCellViewModel(userName: $0.user.name,
+                                                                        profileName: $0.user.screenName,
+                                                                        profilePictureName: $0.user.profileImageUrl,
+                                                                        content: $0.text) }
             completion(.success(tweetCellArray))
         } catch {
             completion(.failure(error))

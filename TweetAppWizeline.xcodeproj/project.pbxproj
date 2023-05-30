@@ -21,6 +21,7 @@
 		3E58E70E2A1E5F3900ABA8B1 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E58E70D2A1E5F3900ABA8B1 /* FeedViewModel.swift */; };
 		3E58E7162A1E5FA800ABA8B1 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E58E7152A1E5FA800ABA8B1 /* TweetCell.swift */; };
 		3E58E71B2A1E634C00ABA8B1 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E58E71A2A1E634C00ABA8B1 /* Observer.swift */; };
+		3E8ABB8E2A25795800D078FA /* QueueSchedulerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8ABB8D2A25795800D078FA /* QueueSchedulerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		3E58E70D2A1E5F3900ABA8B1 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		3E58E7152A1E5FA800ABA8B1 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 		3E58E71A2A1E634C00ABA8B1 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		3E8ABB8D2A25795800D078FA /* QueueSchedulerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueSchedulerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,16 +98,16 @@
 				3E3F20192A1D18DA003F7EF3 /* AppDelegate.swift */,
 				3E3F201B2A1D18DA003F7EF3 /* SceneDelegate.swift */,
 				3E3F201D2A1D18DA003F7EF3 /* FeedViewController.swift */,
-				3E58E7082A1E5D9A00ABA8B1 /* FeedViewControllerTests.swift */,
-				3E58E7152A1E5FA800ABA8B1 /* TweetCell.swift */,
+				3E20EE162A22AFCE00E7ACEA /* FeedDataManager.swift */,
 				3E58E70D2A1E5F3900ABA8B1 /* FeedViewModel.swift */,
+				3E58E7152A1E5FA800ABA8B1 /* TweetCell.swift */,
+				3E20EE362A23F3F900E7ACEA /* TweetModel.swift */,
 				3E58E71A2A1E634C00ABA8B1 /* Observer.swift */,
+				3E8ABB8D2A25795800D078FA /* QueueSchedulerProtocol.swift */,
 				3E3F201F2A1D18DA003F7EF3 /* Main.storyboard */,
 				3E3F20222A1D18DE003F7EF3 /* Assets.xcassets */,
 				3E3F20242A1D18DE003F7EF3 /* LaunchScreen.storyboard */,
 				3E3F20272A1D18DE003F7EF3 /* Info.plist */,
-				3E20EE162A22AFCE00E7ACEA /* FeedDataManager.swift */,
-				3E20EE362A23F3F900E7ACEA /* TweetModel.swift */,
 			);
 			path = TweetAppWizeline;
 			sourceTree = "<group>";
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				3E3F20322A1D18DF003F7EF3 /* Info.plist */,
+				3E58E7082A1E5D9A00ABA8B1 /* FeedViewControllerTests.swift */,
 				3E20EE112A229A2000E7ACEA /* FeedViewModelTests.swift */,
 				3E20EE402A24F7B500E7ACEA /* FeedDataManagerTests.swift */,
 			);
@@ -228,6 +231,7 @@
 				3E20EE372A23F3F900E7ACEA /* TweetModel.swift in Sources */,
 				3E58E70E2A1E5F3900ABA8B1 /* FeedViewModel.swift in Sources */,
 				3E3F201C2A1D18DA003F7EF3 /* SceneDelegate.swift in Sources */,
+				3E8ABB8E2A25795800D078FA /* QueueSchedulerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
